@@ -7,7 +7,15 @@ import java.awt.Color;
 
 public class CreaFactura extends JFrame {
     JFrame f;
-    
+    JTextField idf;
+    JTextField ncf;
+    JTextField dcf;
+    JTextField tcf;
+    JTextField ccf;
+    JTextField vcf;
+    JTextField ivaf;
+    JTextField tocf;
+
     CreaFactura(){
         Font fuente = new Font("Calibri", 100, 72);
     	Font fid = new Font("Calibri", 100, 32);
@@ -25,7 +33,7 @@ public class CreaFactura extends JFrame {
         id.setFont(fid);
         add(id);  
 
-        JTextField idf = new JTextField(100);
+        idf = new JTextField(100);
         idf.setBounds(710,50,200,40);
         add(idf);
 
@@ -64,7 +72,7 @@ public class CreaFactura extends JFrame {
         nc.setFont(fdatos);
         add(nc); 
 
-        JTextField ncf = new JTextField(100);
+        ncf = new JTextField(100);
         ncf.setBounds(700,165,270,20);
         add(ncf);
 
@@ -73,7 +81,7 @@ public class CreaFactura extends JFrame {
         dc.setFont(fdatos);
         add(dc); 
 
-        JTextField dcf = new JTextField(100);
+        dcf = new JTextField(100);
         dcf.setBounds(700,185,270,20);
         add(dcf);
         
@@ -82,7 +90,7 @@ public class CreaFactura extends JFrame {
         tc.setFont(fdatos);
         add(tc); 
         
-        JTextField tcf = new JTextField(100);
+        tcf = new JTextField(100);
         tcf.setBounds(700,205,270,20);
         add(tcf);
         
@@ -92,7 +100,7 @@ public class CreaFactura extends JFrame {
         cc.setFont(fdatos);
         add(cc); 
         
-        JTextField ccf = new JTextField(100);
+        ccf = new JTextField(100);
         ccf.setBounds(700,225,270,20);
         add(ccf);
         
@@ -102,7 +110,7 @@ public class CreaFactura extends JFrame {
         vc.setFont(fdatos);
         add(vc); 
         
-        JTextField vcf = new JTextField(100);
+        vcf = new JTextField(100);
         vcf.setBounds(700,245,270,20);
         add(vcf);
         
@@ -112,7 +120,7 @@ public class CreaFactura extends JFrame {
         iva.setFont(fdatos);
         add(iva); 
         
-        JTextField ivaf = new JTextField(100);
+        ivaf = new JTextField(100);
         ivaf.setBounds(700,265,270,20);
         add(ivaf);
         
@@ -122,7 +130,7 @@ public class CreaFactura extends JFrame {
         toc.setFont(fdatos);
         add(toc); 
         
-        JTextField tocf = new JTextField(100);
+        tocf = new JTextField(100);
         tocf.setBounds(700,285,270,20);
         add(tocf);
         
@@ -154,8 +162,6 @@ public class CreaFactura extends JFrame {
         JTextField cantidadf6 = new JTextField(100);
         cantidadf6.setBounds(0,580,200,30);
         add(cantidadf6);
-        
-        
         
         JLabel des = new JLabel("Descripcion ");
         des.setBounds(350,350,1000,50);
