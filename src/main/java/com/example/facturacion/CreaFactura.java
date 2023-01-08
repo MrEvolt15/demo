@@ -15,6 +15,10 @@ public class CreaFactura extends JFrame {
     JTextField vcf;
     JTextField ivaf;
     JTextField tocf;
+    JTextField cantidadf, cantidadf1,cantidadf2,cantidadf3,cantidadf4,cantidadf5,cantidadf6;
+    JTextField desf,desf1,desf2,desf3,desf4,desf5,desf6;
+    JTextField costof,costof1,costof2,costof3,costof4,costof5,costof6;
+    
 
     CreaFactura(){
         Font fuente = new Font("Calibri", 100, 72);
@@ -141,25 +145,25 @@ public class CreaFactura extends JFrame {
         cantidad.setFont(fid);
         add(cantidad); 
         
-        JTextField cantidadf = new JTextField(100);
+        cantidadf = new JTextField(100);
         cantidadf.setBounds(0,400,200,30);
         add(cantidadf);
-        JTextField cantidadf1 = new JTextField(100);
+        cantidadf1 = new JTextField(100);
         cantidadf1.setBounds(0,430,200,30);
         add(cantidadf1);
-        JTextField cantidadf2 = new JTextField(100);
+        cantidadf2 = new JTextField(100);
         cantidadf2.setBounds(0,460,200,30);
         add(cantidadf2);
-        JTextField cantidadf3 = new JTextField(100);
+        cantidadf3 = new JTextField(100);
         cantidadf3.setBounds(0,490,200,30);
         add(cantidadf3);
-        JTextField cantidadf4 = new JTextField(100);
+        cantidadf4 = new JTextField(100);
         cantidadf4.setBounds(0,520,200,30);
         add(cantidadf4);
-        JTextField cantidadf5 = new JTextField(100);
+        cantidadf5 = new JTextField(100);
         cantidadf5.setBounds(0,550,200,30);
         add(cantidadf5);
-        JTextField cantidadf6 = new JTextField(100);
+        cantidadf6 = new JTextField(100);
         cantidadf6.setBounds(0,580,200,30);
         add(cantidadf6);
         
@@ -169,25 +173,25 @@ public class CreaFactura extends JFrame {
         des.setFont(fid);
         add(des); 
         
-        JTextField desf = new JTextField(100);
+        desf = new JTextField(100);
         desf.setBounds(200,400,500,30);
         add(desf);
-        JTextField desf1 = new JTextField(100);
+        desf1 = new JTextField(100);
         desf1.setBounds(200,430,500,30);
         add(desf1);
-        JTextField desf2 = new JTextField(100);
+        desf2 = new JTextField(100);
         desf2.setBounds(200,460,500,30);
         add(desf2);
-        JTextField desf3 = new JTextField(100);
+        desf3 = new JTextField(100);
         desf3.setBounds(200,490,500,30);
         add(desf3);
-        JTextField desf4 = new JTextField(100);
+        desf4 = new JTextField(100);
         desf4.setBounds(200,520,500,30);
         add(desf4);
-        JTextField desf5 = new JTextField(100);
+        desf5 = new JTextField(100);
         desf5.setBounds(200,550,500,30);
         add(desf5);
-        JTextField desf6 = new JTextField(100);
+        desf6 = new JTextField(100);
         desf6.setBounds(200,580,500,30);
         add(desf6);
         
@@ -198,25 +202,25 @@ public class CreaFactura extends JFrame {
         costos.setFont(fid);
         add(costos); 
         
-        JTextField costof = new JTextField(100);
+        costof = new JTextField(100);
         costof.setBounds(700,400,300,30);
         add(costof);
-        JTextField costof1 = new JTextField(100);
+        costof1 = new JTextField(100);
         costof1.setBounds(700,430,300,30);
         add(costof1);
-        JTextField costof2 = new JTextField(100);
+        costof2 = new JTextField(100);
         costof2.setBounds(700,460,300,30);
         add(costof2);
-        JTextField costof3 = new JTextField(100);
+        costof3 = new JTextField(100);
         costof3.setBounds(700,490,300,30);
         add(costof3);
-        JTextField costof4 = new JTextField(100);
+        costof4 = new JTextField(100);
         costof4.setBounds(700,520,300,30);
         add(costof4);
-        JTextField costof5 = new JTextField(100);
+        costof5 = new JTextField(100);
         costof5.setBounds(700,550,300,30);
         add(costof5);
-        JTextField costof6 = new JTextField(100);
+        costof6 = new JTextField(100);
         costof6.setBounds(700,580,300,30);
         add(costof6);
         

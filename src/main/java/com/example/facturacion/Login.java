@@ -32,8 +32,8 @@ public class Login extends JFrame{
             b.setBounds(10,80,80, 25);//x axis, y axis, width, height  
             b.addActionListener(new ActionListener(){
                 public void actionPerformed(ActionEvent e) {
-                    //new Menu();
-                    //dispose();
+                    new Menu();
+                    dispose();
                     String usuario = userField.getText();
                     System.out.println(usuario);
                                 
