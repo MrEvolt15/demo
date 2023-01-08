@@ -246,7 +246,7 @@ public class CreaFactura extends JFrame {
         });
         add(back);
         JButton crea = new JButton("Ingresar Datos");
-        crea.setBounds(950,620,125,25);
+        crea.setBounds(750,620,125,25);
         crea.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
