@@ -52,19 +52,5 @@ public class Conexion {
 		} else {
 			System.out.println("Desconectado");
 		}
-        /*
-        try {
-            conn =
-            DriverManager.getConnection("jdbc:mysql://35.247.221.55:3306/Ventas" +
-                                   "user=root&password=BioEvolt#4e");
-            // Do something with the Connection
-    
-        }   catch (SQLException ex) {
-                // handle any errors
-            System.out.println("SQLException: " + ex.getMessage());
-            System.out.println("SQLState: " + ex.getSQLState());
-            System.out.println("VendorError: " + ex.getErrorCode());
-        }
-        */
 	}
 }
