@@ -251,7 +251,7 @@ public class CreaFactura extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("Los datos se han subido a la bas de datos!!");          
-                // poner aca los .getText de cada Jfield 
+                // aca va el code para guardar los get de todos los datos
             }
 
         });
@@ -273,6 +273,75 @@ public class CreaFactura extends JFrame {
         setLayout(null);//using no layout managers  
         setVisible(true);//making the frame visible 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+   
+    public int getEid() {
+        this.eid = Integer.parseInt(idf.getText());
+        return eid;
+    }
+
+    public String getEnc() {
+        this.enc = ncf.getText();
+        return enc;
+    }
+
+    public String getEdc() {
+        this.edc = dcf.getText();
+        return edc;
+    }
+
+    public int getEtc() {
+        this.etc = Integer.parseInt(tcf.getText());
+        return etc;
+    }
+
+    public String getEcc() {
+        this.ecc = ccf.getText();
+        return ecc;
+    }
+
+    public double getEvc() {
+        this.evc = Double.parseDouble(vcf.getText());
+        return evc;
+    }
+
+    public double getEtoc() {
+        this.etoc = Double.parseDouble(tocf.getText());
+        return etoc;
+    }
+
+    public int[] getCantidades() {
+        
+        this.cantidades[0] = Integer.parseInt(cantidadf.getText());
+        this.cantidades[1] = Integer.parseInt(cantidadf1.getText());
+        this.cantidades[2] = Integer.parseInt(cantidadf2.getText());
+        this.cantidades[3] = Integer.parseInt(cantidadf3.getText());
+        this.cantidades[4] = Integer.parseInt(cantidadf4.getText());
+        this.cantidades[5] = Integer.parseInt(cantidadf5.getText());
+        this.cantidades[6] = Integer.parseInt(cantidadf6.getText());     
+        return cantidades;
+    }
+
+    public String[] getDescripciones() {
+        this.descripciones[0] = desf.getText();
+        this.descripciones[1] = desf1.getText();
+        this.descripciones[2] = desf2.getText();
+        this.descripciones[3] = desf3.getText();
+        this.descripciones[4] = desf4.getText();
+        this.descripciones[5] = desf5.getText();
+        this.descripciones[6] = desf6.getText();
+        return descripciones;
+    }
+
+    public double[] getCostos() {
+        this.costos[0] = Double.parseDouble(costof.getText());
+        this.costos[1] = Double.parseDouble(costof1.getText());
+        this.costos[2] = Double.parseDouble(costof2.getText());
+        this.costos[3] = Double.parseDouble(costof3.getText());
+        this.costos[4] = Double.parseDouble(costof4.getText());
+        this.costos[5] = Double.parseDouble(costof5.getText());
+        this.costos[6] = Double.parseDouble(costof6.getText());
+        return costos;
     }
 
 }
