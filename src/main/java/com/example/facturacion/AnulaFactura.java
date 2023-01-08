@@ -24,5 +24,6 @@ public class AnulaFactura extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         System.out.println("hola");
+        System.out.println("hola2");
     }
 }
