@@ -8,17 +8,27 @@ import java.awt.Color;
 public class CreaFactura extends JFrame {
     JFrame f;
     JTextField idf;
+    int eid; //variable que contendra el id cuando se haga click en el boton crear factura
     JTextField ncf;
+    String enc; //variable que contendra el nombre del cliente
     JTextField dcf;
+    String edc; //variable que contendra la direccion del cliente
     JTextField tcf;
+    int etc; //variable que contendra el telefono del cliente
     JTextField ccf;
+    String ecc; //variable que contendra el correo del cliente
     JTextField vcf;
+    double evc; //variable que contendra el valor total sin iva;
     JTextField ivaf;
+    final int viva =12;
     JTextField tocf;
+    double etoc; //variable que contendra el valor total a pagar con iva;
     JTextField cantidadf, cantidadf1,cantidadf2,cantidadf3,cantidadf4,cantidadf5,cantidadf6;
+    int [] cantidades= new int [7]; // array de int donde se guadaran las cantidades
     JTextField desf,desf1,desf2,desf3,desf4,desf5,desf6;
+    String [] descripciones = new String[7]; //array de String donde se guardaran las descripciones
     JTextField costof,costof1,costof2,costof3,costof4,costof5,costof6;
-    
+    double [] costos = new double [7]; // array de double donde se guardaran los costos
 
     CreaFactura(){
         Font fuente = new Font("Calibri", 100, 72);
@@ -126,6 +136,7 @@ public class CreaFactura extends JFrame {
         
         ivaf = new JTextField(100);
         ivaf.setBounds(700,265,270,20);
+        ivaf.setText("12%");
         add(ivaf);
         
         
@@ -234,6 +245,17 @@ public class CreaFactura extends JFrame {
             }
         });
         add(back);
+        JButton crea = new JButton("Ingresar Datos");
+        crea.setBounds(950,620,125,25);
+        crea.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("Los datos se han subido a la bas de datos!!");          
+                // poner aca los .getText de cada Jfield 
+            }
+
+        });
+        add(crea);
 
         JPanel panel=new JPanel();  
         panel.setBounds(0,0,1000,100);    
@@ -244,6 +266,7 @@ public class CreaFactura extends JFrame {
         panel1.setBounds(0,350,1000,50);    
         panel1.setBackground(Color.black);   
         add(panel1); 
+        
 
         setLocation(30, 20);
         setSize(1000,700);//400 width and 500 height  
