@@ -2,10 +2,15 @@ package com.example.facturacion;
 
 import javax.swing.*;
 import java.awt.event.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.util.Date;
 import java.awt.Font;
 import java.awt.Color;
 
 public class CreaFactura extends JFrame {
+    private static Connection cn;
     JFrame f;
     JTextField idf;
     int eid; //variable que contendra el id cuando se haga click en el boton crear factura
@@ -252,6 +257,34 @@ public class CreaFactura extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 System.out.println("Los datos se han subido a la bas de datos!!");          
                 // aca va el code para guardar los get de todos los datos
+                try {
+					Class.forName("com.mysql.cj.jdbc.Driver");
+					cn = DriverManager.getConnection("jdbc:mysql://35.247.221.55:3306/mydb", "root", "BioEvolt#4e");
+					System.out.println("Conectado a la base de datos mydb ");
+					// Entrada de CreaFactura
+					java.util.Date fecha0 = new java.util.Date(); //fecha until
+					Date fecha = new java.sql.Date(fecha0.getTime()); // fecha mysql
+
+					int C_id = 2;
+					int id = getEid();
+					String nombre = getEnc();
+					String direccion = getEdc();
+					int telefono = getEtc();
+					String correo = getEcc();
+					double subtotal = getEvc();
+					double total = getEtoc();
+					String query = "INSERT INTO Factura (No_Factura, fecha, Total_sin_iva, Total_con_iva, Cliente_C_id) VALUES ('"
+							+ id + "', '" + fecha + "', '" + subtotal + "', '" + total + "', '" + C_id
+							+ "')";
+					System.out.println("Factura agregada ");
+					Statement stm = cn.createStatement();
+					stm.executeUpdate(query);
+				} catch (Exception e2) {
+					System.out.println("Error al conectarse a la BD ");
+					e2.printStackTrace();
+				}
+				System.out.println("Los datos se han subido a la bas de datos!!");
+				// aca va el code para guardar los get de todos los datos
             }
 
         });

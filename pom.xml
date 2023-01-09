@@ -25,8 +25,11 @@
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.31</version>
     </dependency>
-    
-
+    <dependency>
+      <groupId>com.healthmarketscience.sqlbuilder</groupId>
+      <artifactId>sqlbuilder</artifactId>
+      <version>2.1.7</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
