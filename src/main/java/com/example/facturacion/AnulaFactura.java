@@ -22,6 +22,7 @@ public class AnulaFactura extends JFrame{
         setLayout(null);//using no layout managers  
         setVisible(true);//making the frame visible 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        System.out.println("oa");
         
     }
 }
